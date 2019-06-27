@@ -23,11 +23,6 @@ include_directories(${PROJECT_SOURCE_DIR}/include)   # 头文件目录, -I
 
 target_link_libraries(main glfw3dll)
 
-# if(WINDOWS)	# 静态关联配置
-#     set(CMAKE_CXX_FLAGS "-static-gcc")
-# endif()
-
-
 # 复制 dll 到 build 目录
 if(WINDOWS)
     add_custom_command(TARGET main 
