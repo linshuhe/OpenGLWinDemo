@@ -21,7 +21,7 @@ add_executable(main ${SOURCE_FILES})	# 源文件
 
 include_directories(${PROJECT_SOURCE_DIR}/include)   # 头文件目录, -I
 
-target_link_libraries(main glfw3dll)
+target_link_libraries(main glfw3)
 
 # 复制 dll 到 build 目录
 if(WINDOWS)
