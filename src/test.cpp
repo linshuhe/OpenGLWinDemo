@@ -1,11 +1,16 @@
+#include <application.h>
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #include <iostream>
 // settings
 const unsigned int SCR_WIDTH = 400;
 const unsigned int SCR_HEIGHT = 300;
+
+static bool gPause = false;
+
 int main()
 {
+
     // glfw: initialize and configure
     // ------------------------------
     glfwInit();
@@ -47,4 +52,9 @@ int main()
     //---------------------------------------------------------------
     glfwTerminate();
     return 0;
+}
+
+void createScene()
+{
+    // mPhysics = PxCreatePhysics(PX_PHYSICS_VERSION, *mFoundation, )
 }
